@@ -1,0 +1,51 @@
+body {
+    font-family: sans-serif;
+}
+
+#app {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 95vh;
+}
+
+.start {
+    font-size: 50px;
+    min-width: 50%;
+    height: 200px;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px -7px #000000 inset;
+}
+
+.start:hover {
+    background: #ffe5d0;
+    box-shadow: 0px 0px 20px -7px #000000 inset;
+}
+
+.start:active {
+    box-shadow: 0px 0px 20px -20px #000000 inset;
+}
+
+.xo {
+    border: 1px solid black;
+    width: 180px;
+    height: 180px;
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.xo > div {
+    border: 1px solid black;
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
